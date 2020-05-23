@@ -38,7 +38,7 @@ def search(app):
         data = response.json()
         results = ""
         name = data['name']
-        results += name + " weather:\n"
+        results += name + " Weather:\n"
 
         # get description
         if 'weather' in data:
@@ -68,7 +68,9 @@ def search(app):
         labela = Label(text=results, height=10, width=50)
         labela.grid(row=3, column=0, rowspan=1)
         # print(results)
-
+    else:
+        labela = Label(text="We don't have data on that city, try checking the spelling", height=10, width=50)
+        labela.grid(row=3, column=0, rowspan=1)
 
 def main():
     root = Tk()
