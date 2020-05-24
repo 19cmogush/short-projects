@@ -1,6 +1,6 @@
 import requests
 
-response = requests.get("https://gnews.io/api/v3/search?q=covid19&max=100&token=dc54b534c13117f14bb9ad291ac81e62")
+response = requests.get("https://gnews.io/api/v3/search?q=covid19&max=100&token=api-key")
 
 data = response.json()
 
@@ -24,7 +24,7 @@ for element in titles:
 
     headers = {
         'x-rapidapi-host': "twinword-sentiment-analysis.p.rapidapi.com",
-        'x-rapidapi-key': "b0ca58cb10msh4cb9eb7e8f6f27ap1efd3bjsn108a4f7b1c63"
+        'x-rapidapi-key': "api-key"
         }
 
     response = requests.request("GET", url, headers=headers, params=querystring)
