@@ -1,5 +1,6 @@
 import requests
 
+
 doc = open("sentiment.csv", "w")
 
 
@@ -22,6 +23,11 @@ while month != 5 or day != 25:
     # for dict in data:
     #    print(dict, end=": ")
     #    print(data[dict])
+
+    headers = {
+        'x-rapidapi-host': "twinword-sentiment-analysis.p.rapidapi.com",
+        'x-rapidapi-key': "api-key"
+        }
 
     articles = news_data['articles']
     titles = []
