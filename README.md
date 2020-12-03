@@ -1,2 +1,2 @@
 # short-projects
-Short projects to pass the time in python and C++
+Web Scraping and Data Science scripts in python
